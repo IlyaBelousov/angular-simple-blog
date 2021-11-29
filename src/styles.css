@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  margin: 0;
+  font-family: 'Roboto Light', sans-serif;
+}
+h1,h2,h3{
+  margin: 0;
+}
+button{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(66, 151, 249, 0.84);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

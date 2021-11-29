@@ -1,0 +1,63 @@
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  max-height: max-content;
+  background-color: #dcf1eb;
+  box-sizing: border-box;
+}
+
+.blog-title {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.blog-items {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 80%;
+}
+
+.blog-footer {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+}
+
+.blog-footer-btn {
+  height: 30px;
+  width: 100px;
+}
+
+.add-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 500px;
+  height: 300px;
+  z-index: 999;
+  background-color: rgb(98, 94, 94);
+  box-sizing: border-box;
+  padding: 10px;
+}
+.add-card textarea{
+  resize: none;
+  height: 100px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttons button {
+  margin-left: 10px;
+}
+
+
+

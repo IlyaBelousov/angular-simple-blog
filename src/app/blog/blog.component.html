@@ -1,0 +1,27 @@
+<div class="blog-container">
+  <h2 class="blog-title">{{title}}</h2>
+  <div class="blog-items">
+    <app-blog-card
+      *ngFor="let iterCard of blogCards"
+      [iterCard]="iterCard"
+    >
+    </app-blog-card>
+  </div>
+  <div class="blog-footer">
+    <button (click)="openModal('custom-modal-1')" class="blog-footer-btn">+ Добавить</button>
+  </div>
+
+</div>
+<jw-modal id="custom-modal-1">
+  <div class="add-card">
+    <h3>Title</h3>
+    <input [(ngModel)]="newCard.title" (ngModelChange)="changeNewCardTitle($event)" type="text">
+    <h3>Content</h3>
+    <textarea [(ngModel)]="newCard.content" (ngModelChange)="changeNewCardContent($event)"></textarea>
+    <div class="buttons">
+      <button (click)="onClose('custom-modal-1')">Отмена</button>
+      <button (click)="saveNewCard('custom-modal-1')">Сохранить</button>
+    </div>
+  </div>
+</jw-modal>
+

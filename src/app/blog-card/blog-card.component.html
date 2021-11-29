@@ -1,0 +1,13 @@
+<div class="blog-item" *ngIf="iterCard;else noCards">
+  <h3>{{iterCard.title}}</h3>
+  <p class="blog-item-content">
+    {{iterCard.content}}
+  </p>
+  <a [routerLink]="['/card',iterCard.cardId]">
+    <button class="blog-item-btn">Перейти</button>
+  </a>
+
+</div>
+<ng-template #noCards>
+  <p>There is no cards</p>
+</ng-template>

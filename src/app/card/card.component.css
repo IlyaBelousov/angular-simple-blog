@@ -1,0 +1,61 @@
+button {
+  height: 25px;
+  width: 90px;
+}
+.card-container{
+  width: 100%;
+  height: 100vh;
+  background-color: #dcf1eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 50%;
+  height: 80%;
+  background-color: rgba(136, 145, 142, 0.79);
+}
+.card-title input{
+  width: 99%;
+}
+.card-content{
+  display: flex;
+  flex-direction: column;
+  width: 99%;
+}
+.card-content-title{
+  display: flex;
+  overflow: hidden;
+}
+
+.card-content textarea{
+  width: 100%;
+  height: 300px;
+  resize: none;
+}
+.card-footer{
+  display: flex;
+  justify-content: space-between;
+}
+.card-footer-delete{
+  background-color: rgba(249,58,57,0.84);
+
+}
+.modal-container{
+  display: flex;
+  background-color: rgb(98, 94, 94);
+  width: 400px;
+  height: 100px;
+  flex-direction: column;
+  align-items: center;
+}
+.buttons-modal{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
