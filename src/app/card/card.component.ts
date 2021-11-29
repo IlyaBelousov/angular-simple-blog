@@ -49,4 +49,7 @@ export class CardComponent implements OnInit {
     this.ModalService.close(modalId)
   }
 
+  cancelDelete(modelId: string) {
+    this.ModalService.close(modelId)
+  }
 }

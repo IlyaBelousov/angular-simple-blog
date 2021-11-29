@@ -22,7 +22,8 @@
     <h4>Вы уверены что хотите удалить?</h4>
     <div class="buttons-modal">
       <button [routerLink]="['']" (click)="deleteCard('custom-modal-2')" class="agree">Да</button>
-      <button [routerLink]="['/card',card.cardId]" class="disagree">Нет</button>
+      <button (click)="cancelDelete('custom-modal-2')" [routerLink]="['/card',card.cardId]" class="disagree">Нет
+      </button>
     </div>
   </div>
 </jw-modal>
